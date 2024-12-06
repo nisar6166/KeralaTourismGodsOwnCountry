@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar start*/
+#navbar {
+    background: #f9f9f9;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(127, 13, 13);
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+
+}
+
+#logo span {
+    color: #ffa500;
+}
+
+.navbar-toggler span {
+    color: #ffa500;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+
+.nav-item .nav-link:hover {
+    background: #ffa500;
+    color: white;
+}
+
+#navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+/* navbar end*/
+
+
+
+/* home section start*/
+
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)), url(./images/background\ kerala\ tourism.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: #ff6f00;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite ease;
+
+}
+
+@keyframes changetext{
+    0% {
+        content: "Wayanad";
+    }
+
+    10% {
+        content: "Munnar";
+    }
+
+    20% {
+        content: "Ponmudi Hills";
+    }
+
+    30% {
+        content: "Athirapally Waterfall";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: opx 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+
+    background: #ffa500;
+    color: white;
+
+}
+
+@media (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1 {
+        font-style: 38px;
+    }
+
+    .home .content p {
+        font-style: 13px;
+    }
+
+}
+
+/* home section end*/
+
+/* explore Destinations start */
+
+.destinations {
+    margin-top: 50px;
+    padding: 50px;
+    background: #ede9e9;
+    border-radius: 10px;
+
+}
+
+.destinations .card {
+    border-radius: 10px;
+}
+
+.destinations .card .carousel-inner {
+    border-radius: 10px;
+}
+
+.destinations .card .carousel-inner .carousel-item img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.destinations h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.destinations h2 span {
+    color: #ffa500;
+}
+
+.destinations p {
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .destinations {
+        padding: 0;
+    }
+
+}
+
+/* explore Destinations end */
+
+
+
+/* top destinations start */
+.top-destinations {
+    margin-top: 50px;
+    padding: 50px;
+    background: #ede9e9;
+    border-radius: 10px;
+}
+
+.top-destinations .main-text h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    /* padding: 20px; */
+    font-weight: 600;
+    text-shadow: 0px 2px 1px black;
+
+}
+
+.top-destinations .main-text h1 span {
+    color: #ffa500;
+}
+
+.top-destinations .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.top-destinations .card img {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.top-destinations .card .card-body {
+    background: transparent;
+}
+
+.top-destinations .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.top-destinations .card .card-body p {
+    font-style: 15px;
+    text-align: justify;
+}
+
+/* top destinations end*/
+
+/* aboutkerala start */
+.aboutkerala {
+    margin-top: 50px;
+    padding: 50px;
+    background: #ede9e9;
+    border-radius: 10px;
+}
+
+.aboutkerala .card {
+    border-radius: 10px;
+}
+
+.aboutkerala .card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.aboutkerala h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.aboutkerala h2 span {
+    color: #ffa500;
+}
+
+.aboutkerala p {
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+
+@media (max-width:765px) {
+    .aboutkerala {
+        padding: 0;
+    }
+
+}
+
+/* aboutkerala end */
+
+/* Districts start */
+
+.districts {
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.districts .main-text h1 {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: 5px 10px 20px 2px;
+    border: none;
+
+    text-align: center;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.districts .main-text h1 span {
+    color: #ffa500;
+}
+
+.districts .card {
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+}
+
+.districts .card img {
+    border-radius: 5px;
+}
+
+.districts .card-body h3 {
+    margin-top: 10px;
+
+}
+
+.districts .card-body h3 a {
+    text-decoration: none;
+}
+
+
+@media (max-width:765px) {
+    .districts {
+        padding: 0;
+    }
+
+}
+
+/* Districts end */
+
+
+/* gallery start */
+
+.gallery {
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.gallery .main-text h1 {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: 5px 10px 20px 2px;
+    border: none;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.gallery .main-text h1 span {
+    color: #ffa500;
+}
+
+.gallery .card {
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+
+}
+
+.gallery .card img {
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.gallery .card img:hover {
+    transform: scale(1.1);
+}
+
+/* gallery end */
+
+/* Contact Us validation start */
+
+.contact {
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    background: #0e0d0d;
+    border-radius: 10px;
+
+
+}
+
+.contact .main-text h1 {
+    color: #f9f9f9;
+    text-align: center;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+    font-weight: 600;
+
+}
+
+.contact .main-text h1 span {
+    color: #ffa500;
+}
+
+.contact .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6x black;
+
+}
+
+.contact .card img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6x black;
+
+}
+
+.contact .row {
+    margin-top: 30px;
+}
+
+.contact form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.contact form textarea {
+    border: none;
+    box-sizing: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+.contact .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.contact .submit:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .contact {
+        padding: 0;
+    }
+
+    .main-text h2 {
+        padding: 20px;
+    }
+   
+}
+
+/* Contact Us validation end */
+
+/* login start */
+
+
+.loginn{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background:rgb(206, 243, 254);
+    
+}
+
+.wrapper {
+
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(242, 228, 228, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden ;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transform: translateX(400px);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+
+
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+
+}
+
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.form-box .btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.form-box .btn:hover {
+    background: #162938;
+    color: white;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+
+/* login end */
+
+
+
+/* footer start */
+#footer {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    background: #dfd8d8;
+}
+
+#footer h1 {
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+
+}
+
+#footer h1 span {
+    color: #ffa500;
+}
+
+.social-links a {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 50px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.social-links a:hover {
+    background: #ffa500;
+}
+
+
+/* footer end */
+
+
+
